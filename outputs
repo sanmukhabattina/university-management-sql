@@ -53,7 +53,7 @@ This file contains the results of running all 16 queries on the sample data.
 | Charlie | Data Science |
 | David   | Data Science |
 
- 8. Cross Join Students and Courses (first 5 shown)
+ 8. Cross Join Students and Courses 
 | Name   | CourseName   |
 |--------|--------------|
 | Alice  | DBMS         |
@@ -82,7 +82,7 @@ This file contains the results of running all 16 queries on the sample data.
 | Alice   |
 | Charlie |
 
- 12. Union of Students and Courses (first 5 shown)
+ 12. Union of Students and Courses 
 | Item    |
 |---------|
 | AI      |
@@ -99,4 +99,25 @@ This file contains the results of running all 16 queries on the sample data.
 | 3         |
 | 4         |
 
- 14. Students no
+ 14. Students not enrolled in any course
+| StudentID |
+|-----------|
+| 5         |
+
+
+ 15. Top 3 Students
+| StudentID | Name    | Age | Major            | Email              |
+|-----------|---------|-----|------------------|--------------------|
+| 1         | Alice   | 20  | Computer Science | alice@example.com  |
+| 2         | Bob     | 22  | Data Science     | bob@example.com    |
+| 3         | Charlie | 19  | AI               | charlie@example.com|
+
+
+16. Order by Age DESC, Name ASC
+| Name    | Age |
+|---------|-----|
+| Eva     | 23  |
+| Bob     | 22  |
+| David   | 21  |
+| Alice   | 20  |
+| Charlie | 19  |

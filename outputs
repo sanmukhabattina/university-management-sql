@@ -1,0 +1,102 @@
+SQL Query Outputs
+
+This file contains the results of running all 16 queries on the sample data.
+
+1.Select Name and Major where Age > 19
+| Name   | Major             
+|--------|-------------------|
+| Alice  | Computer Science  |
+| Bob    | Data Science      |
+| David  | Computer Science  |
+| Eva    | Data Science      |
+
+2. Average Age of Students
+| AvgAge |
+|--------|
+| 21.0   |
+
+3. Student count per Major (having >1)
+| Major             | StudentCount |
+|-------------------|--------------|
+| Computer Science  | 2            |
+| Data Science      | 2            |
+
+ 4. Students older than 20 in Computer Science
+| StudentID | Name  | Age | Major            | Email              |
+|-----------|-------|-----|------------------|--------------------|
+| 4         | David | 21  | Computer Science | david@example.com  |
+
+ 5. Rank students by Grade
+| StudentID | Grade | RankInClass |
+|-----------|-------|-------------|
+| 1         | C     | 1           |
+| 2         | B     | 2           |
+| 4         | B     | 2           |
+| 1         | A     | 4           |
+| 3         | A     | 4           |
+
+ 6. Student and Course Inner Join
+| Name    | CourseName   |
+|---------|--------------|
+| Alice   | DBMS         |
+| Bob     | AI           |
+| Charlie | Data Science |
+| Alice   | AI           |
+| David   | Data Science |
+
+7. Left Join Students with Courses
+| Name    | CourseName   |
+|---------|--------------|
+| Alice   | DBMS         |
+| Alice   | AI           |
+| Bob     | AI           |
+| Charlie | Data Science |
+| David   | Data Science |
+
+ 8. Cross Join Students and Courses (first 5 shown)
+| Name   | CourseName   |
+|--------|--------------|
+| Alice  | DBMS         |
+| Alice  | AI           |
+| Alice  | Data Science |
+| Bob    | DBMS         |
+| Bob    | AI           |
+
+ 9. Students with same Major
+| Student1 | Student2 |
+|----------|----------|
+| Alice    | David    |
+| Bob      | Eva      |
+| David    | Alice    |
+| Eva      | Bob      |
+
+ 10. Students older than AvgAge
+| Name |
+|------|
+| Bob  |
+| Eva  |
+
+11. Students with Grade A
+| Name    |
+|---------|
+| Alice   |
+| Charlie |
+
+ 12. Union of Students and Courses (first 5 shown)
+| Item    |
+|---------|
+| AI      |
+| Alice   |
+| Bob     |
+| Charlie |
+| DBMS    |
+
+ 13. Intersect Students and Enrollments
+| StudentID |
+|-----------|
+| 1         |
+| 2         |
+| 3         |
+| 4         |
+
+ 14. Students no

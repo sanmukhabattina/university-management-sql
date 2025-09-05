@@ -11,12 +11,5 @@ It demonstrates creating tables, inserting sample data, and executing queries li
 
  Files
 schema.sql → Creates database tables & inserts sample data.  
-queries.sql → Contains 16 assignment queries.  
-outputs.md(optional) → Query results (you can add screenshots or tables).  
+queries.sql → Contains  queries.  
 
- How to Run
-1. Install **SQLite** or use an online SQL compiler (e.g., [SQLite Online](https://sqliteonline.com)).  
-2. Run:
-   sql
-   .read schema.sql
-   .read queries.sql

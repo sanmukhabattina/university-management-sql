@@ -1,5 +1,3 @@
--- Create Students table
-
 CREATE TABLE Students (
     StudentID INT PRIMARY KEY,
     Name VARCHAR(50),
@@ -7,14 +5,14 @@ CREATE TABLE Students (
     Major VARCHAR(50)
 );
 
--- Create Courses table
+
 CREATE TABLE Courses (
     CourseID INT PRIMARY KEY,
     CourseName VARCHAR(50),
     Credits INT
 );
 
--- Create Enrollments table
+
 CREATE TABLE Enrollments (
     EnrollmentID INT PRIMARY KEY,
     StudentID INT,
@@ -24,19 +22,17 @@ CREATE TABLE Enrollments (
     FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
 );
 
--- Create Departments table
+
 CREATE TABLE Departments (
     DeptID INT PRIMARY KEY,
     DeptName VARCHAR(50)
 );
 
--- Later requirement: Add Email column to Students
+
 ALTER TABLE Students ADD Email VARCHAR(100);
 
--- Drop Departments table as per instructions
 DROP TABLE Departments;
 
--- Insert sample data
 INSERT INTO Students (StudentID, Name, Age, Major, Email) VALUES
 (1, 'Alice', 20, 'Computer Science', 'alice@example.com'),
 (2, 'Bob', 22, 'Data Science', 'bob@example.com'),
@@ -56,8 +52,6 @@ INSERT INTO Enrollments VALUES
 (1004, 1, 102, 'C'),
 (1005, 4, 103, 'B');
 
--- Update Alice’s Major to Data Science
 UPDATE Students SET Major = 'Data Science' WHERE StudentID = 1;
 
--- Delete Students younger than 18
 DELETE FROM Students WHERE Age < 18;

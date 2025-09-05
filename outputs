@@ -2,7 +2,7 @@ SQL Query Outputs
 
 This file contains the results of running all 16 queries on the sample data.
 
-1.Select Name and Major where Age > 19
+1.Select Name and Major where Age > 19 
 | Name   | Major             
 |--------|-------------------|
 | Alice  | Computer Science  |
